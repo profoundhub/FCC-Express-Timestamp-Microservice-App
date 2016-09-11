@@ -8,7 +8,8 @@ const path = require('path');
 
 const moment = require('moment');
 
-app.set('port', (process.env.PORT || 8081));
+// app.set('port', (process.env.PORT || 8081));
+const port = process.env.PORT || 8081;
 
 app.get('/', function (req, res) {
    res.send('Test App!');
@@ -23,14 +24,16 @@ if (queryDate !== "Invalid Data") {
         "unix": unixDate, "human": humanDate
     })
   }
-
+  else {
+    res.send('Not Feeling Well ...');
+  }
 })
 
 http.listen(port, function () {
-
+/*
   var host = server.address().address
   var port = server.address().port
-
+*/
   console.log("Example App Listening on *:" + port);
 
 })
