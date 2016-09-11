@@ -1,10 +1,19 @@
 "use strict";
 
 const express = require('express');
+const fs = require('fs');
 const app = express();
 // app.use(express.static('../public')); // path to your public directory
 
 app.use(express.static('/'));
+// This responds a GET request for the / page.
+app.get('/', function (req, res) {
+   // console.log("Got a GET request for /");
+   // res.send('Page Listing');
+   fs.readFile(__dirname + '/views/index.html', 'utf8', function(err, text){
+      res.send(text);
+    });
+})
 
 // app.use(express.static(__dirname + "/index.html"));
 
