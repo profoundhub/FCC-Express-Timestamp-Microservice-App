@@ -20,4 +20,6 @@ $ node server.js
 
 Visit it: http://localhost:8081/ OR http://127.0.0.1:8081
 
-## 
+## What is should look like:
+
+https://timestamp-ms.herokuapp.com/
