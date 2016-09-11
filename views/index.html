@@ -27,17 +27,16 @@
                 <p class="lead">
                     <blockquote>
                         <h3>User Stories:</h3>
-
                         <ol class="list-group">
                             <li class="list-group-item list-group-item-action" data-toggle="tooltip" data-placement="left" title="1. ">
-                                I can pass a string as a parameter, and it will check to see whether that string
-                        contains either a unix timestamp or a natural language date (example: January 1, 2016)
+                                I can pass a <button type="button" class="btn btn-warning">string</button> as a parameter, and it will check to see whether that <button type="button" class="btn btn-warning">string</button>
+                        contains either a <button type="button" class="btn btn-secondary">unix timestamp</button> or a <button type="button" class="btn btn-success">natural language</button> <button type="button" class="btn btn-info">date</button> (<em><strong>Example</strong>: January 1, 2016</em>)
                             </li>
                             <li class="list-group-item list-group-item-action" data-toggle="tooltip" data-placement="left" title="2. ">
-                                If it does, it returns both the Unix timestamp and the natural language form of that date.
+                                If it does, it returns both the <button type="button" class="btn btn-secondary">Unix timestamp</button> and the <button type="button" class="btn btn-success">natural language</button> form of that <button type="button" class="btn btn-info">date</button>.
                             </li>
                             <li class="list-group-item list-group-item-action" data-toggle="tooltip" data-placement="left" title="3. ">
-                                If it does not contain a date or Unix timestamp, it returns null for those properties.
+                                If it does not contain a <button type="button" class="btn btn-info">date</button>  or <button type="button" class="btn btn-secondary">Unix timestamp</button>, it returns <button type="button" class="btn btn-danger">null</button> for those properties.
                             </li>
                         </ol>
                     </blockquote>
@@ -57,7 +56,12 @@
                 <h3>Example Output:</h3>
                 <i class="fa fa-eye" aria-hidden="true"></i>
                     <code>
-                        {"unix": 1450137600,"natural": "December 15, 2015"}
+                        {"unix":"1450137600","natural":"December 15, 2015"}
+                    </code> &nbsp;&hellip; OR
+                <br />
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                    <code>
+                        {"unix":null,"natural":null}
                     </code>
             </div>
         </div>
