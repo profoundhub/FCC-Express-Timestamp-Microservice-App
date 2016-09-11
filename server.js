@@ -1,4 +1,5 @@
 "use strict";
+
 const express = require('express');
 const app = express();
 
@@ -18,7 +19,8 @@ app.get('/:date', (req,res) => {
 
   if (!time.isValid()) {
     res.json({
-      'unix': null, 'natural': null
+      'unix': null,
+      'natural': null
     });
   }
 
