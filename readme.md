@@ -1,4 +1,4 @@
-### Steps:
+### If you wish to follow along, here are the steps:
 
 # Installing Express
 
@@ -18,19 +18,21 @@
 
 - $ node server.js
 
-- Visit it: http://localhost:8081/ OR http://127.0.0.1:8081
+- Wisit it (on your Local Machine): http://localhost:8081/ OR http://127.0.0.1:8081
+
+## Original Challenge:
+
+https://www.freecodecamp.com/challenges/timestamp-microservice
 
 ## What is should look like:
 
 - https://timestamp-ms.herokuapp.com/
 
-https://www.freecodecamp.com/challenges/timestamp-microservice
-
 ## My Solution on Heroku:
 
-- [https://fcc-ts-ms.herokuapp.com/](https://fcc-ts-ms.herokuapp.com/)
+- [https://fcc-ts-ms.herokuapp.com/](https://fcc-ts-ms.herokuapp.com/ target="_blank")
 
 ### Quick Links:
 
-- [https://fcc-ts-ms.herokuapp.com/1450137600](https://fcc-ts-ms.herokuapp.com/1450137600)
-- [https://fcc-ts-ms.herokuapp.com/December%2015,%202015](https://fcc-ts-ms.herokuapp.com/December%2015,%202015)
+- [https://fcc-ts-ms.herokuapp.com/1450137600](https://fcc-ts-ms.herokuapp.com/1450137600 target="_blank")
+- [https://fcc-ts-ms.herokuapp.com/December%2015,%202015](https://fcc-ts-ms.herokuapp.com/December%2015,%202015 target="_blank")
