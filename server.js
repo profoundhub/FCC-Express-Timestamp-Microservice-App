@@ -1,11 +1,10 @@
 "use strict";
+
 const express = require('express');
 const app = express();
+
 const http = require('http').Server(app);
 const path = require('path');
-
-// app.set('port', (process.env.PORT || 8081));
-// const port = process.env.PORT || 8081;
 
 app.set('port', (process.env.PORT || 8081));
 
@@ -20,7 +19,8 @@ app.get('/:date', (req,res) => {
 
   if (!time.isValid()) {
     res.json({
-      'unix': null, 'natural': null
+      'unix': null,
+      'natural': null
     });
   }
 
