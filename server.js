@@ -12,10 +12,12 @@ const moment = require('moment');
 
 // app.use(express.static(__dirname + '/index.html'));
 // app.use(express.static(__dirname));
-
+app.use(express.static(__dirname + "/index.html"));
+/*
 app.get('/', function (req, res) {
   res.render('index', {});
 });
+*/
 
 app.get('/:date', (req,res) => {
 
