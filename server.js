@@ -12,17 +12,19 @@ app.set('port', (process.env.PORT || 8081));
 
 app.get('/', function (req, res) {
    res.send('Test App!');
-})
+   var queryDate = new Date(req.params.date);
+   console.log(queryDate);
 
 if (queryDate !== "Invalid Data") {
   var unixDate = moment.unix(queryDate);
   var humanDate = moment(queryDate);
 
-  res.json ({
-      "unix": unixDate, "human": humanDate
-  })
+    res.json ({
+        "unix": unixDate, "human": humanDate
+    })
+  }
 
-}
+})
 
 http.listen(port, function () {
 
