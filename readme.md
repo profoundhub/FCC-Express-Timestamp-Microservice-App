@@ -30,9 +30,9 @@ https://www.freecodecamp.com/challenges/timestamp-microservice
 
 ## My Solution on Heroku:
 
-- [https://fcc-ts-ms.herokuapp.com/](https://fcc-ts-ms.herokuapp.com/ target="_blank")
+- [https://fcc-ts-ms.herokuapp.com/](https://fcc-ts-ms.herokuapp.com/){:target="_blank"}
 
 ### Quick Links:
 
-- [https://fcc-ts-ms.herokuapp.com/1450137600](https://fcc-ts-ms.herokuapp.com/1450137600 target="_blank")
-- [https://fcc-ts-ms.herokuapp.com/December%2015,%202015](https://fcc-ts-ms.herokuapp.com/December%2015,%202015 target="_blank")
+- [https://fcc-ts-ms.herokuapp.com/1450137600](https://fcc-ts-ms.herokuapp.com/1450137600){:target="_blank"}
+- [https://fcc-ts-ms.herokuapp.com/December%2015,%202015](https://fcc-ts-ms.herokuapp.com/December%2015,%202015){:target="_blank"}
