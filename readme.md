@@ -23,3 +23,14 @@
 ## What is should look like:
 
 - https://timestamp-ms.herokuapp.com/
+
+https://www.freecodecamp.com/challenges/timestamp-microservice
+
+## My Solution on Heroku:
+
+- [https://fcc-ts-ms.herokuapp.com/](https://fcc-ts-ms.herokuapp.com/)
+
+### Quick Links:
+
+- [https://fcc-ts-ms.herokuapp.com/1450137600](https://fcc-ts-ms.herokuapp.com/1450137600)
+- [https://fcc-ts-ms.herokuapp.com/December%2015,%202015](https://fcc-ts-ms.herokuapp.com/December%2015,%202015)
