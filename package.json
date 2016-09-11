@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/profoundhub/FCC-Express-Timestamp-Microservice-App/issues"
   },
-  "homepage": "https://github.com/profoundhub/FCC-Express-Timestamp-Microservice-App#readme"
+  "homepage": "https://github.com/profoundhub/FCC-Express-Timestamp-Microservice-App#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "multer": "^1.2.0"
+  }
 }
