@@ -10,6 +10,8 @@ app.set('port', (process.env.PORT || 8081));
 
 const moment = require('moment');
 
+app.use(express.static(__dirname + '/index.html'));
+
 app.get('/:date', (req,res) => {
 
   let time = moment(req.params.date, 'MMMM DD, YYYY', true);
