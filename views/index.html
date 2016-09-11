@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TimeStamp MicroService API</title>        
+        <title>TimeStamp MicroService API</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <style>
@@ -18,39 +18,70 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <h1 class="header">
-                API BaseJump: TimeStamp MicroService
-            </h1>
-            <blockquote>
-                User stories:
-                <ul>1) I can pass a string as a parameter, and it will check to see whether that string
-                contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
-                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
-                <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
-            </blockquote>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-6">
+                    [API BaseJump] TimeStamp MicroService
+                </h1>
 
-            <h3>Example usage:</h3>
-            <span class="codeLook">
-                <a href="https://fcc-ts-ms.herokuapp.com/December%2015,%202015">https://fcc-ts-ms.herokuapp.com/December%2015,%202015</a>
-            </span>
+            <hr class="m-y-2">
+
+                <p class="lead">
+                    <blockquote>
+                        <h3>User Stories:</h3>
+                        <ol class="list-group">
+                            <li class="list-group-item list-group-item-action">
+                                I can pass a string as a parameter, and it will check to see whether that string
+                        contains either a unix timestamp or a natural language date (example: January 1, 2016)
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                If it does, it returns both the Unix timestamp and the natural language form of that date.
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                If it does not contain a date or Unix timestamp, it returns null for those properties.
+                            </li>
+                        </ol>
+                    </blockquote>
+                </p>
+
+            <hr class="m-y-2">
+
+                <h3>Example Usage:</h3>
+                <i class="fa fa-external-link" aria-hidden="true"></i>
+                    <span class="codeLook">
+                        <a href="https://fcc-ts-ms.herokuapp.com/December%2015,%202015">https://fcc-ts-ms.herokuapp.com/December%2015,%202015</a>
+                    </span>
+
             <br>
-            <span class="codeLook">
-                <a href="https://fcc-ts-ms.herokuapp.com/1450137600">https://fcc-ts-ms.herokuapp.com/1450137600</a>
-            </span>
+                <i class="fa fa-external-link" aria-hidden="true"></i>
+                    <span class="codeLook">
+                        <a href="https://fcc-ts-ms.herokuapp.com/1450137600">https://fcc-ts-ms.herokuapp.com/1450137600</a>
+                    </span>
 
-            <h3>Example output:</h3>
-<!--
-            <code>
-                {
-                  "unix": 1450137600,
-                  "natural": "December 15, 2015"
-                }
-            </code>
--->
-            <code>
-                {"unix": 1450137600,"natural": "December 15, 2015"}
-            </code>
+            <hr class="m-y-2">
+
+                <h3>Example Output:</h3>
+    <!--
+                <code>
+                    {
+                      "unix": 1450137600,
+                      "natural": "December 15, 2015"
+                    }
+                </code>
+    -->
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                    <code>
+                        {"unix": 1450137600,"natural": "December 15, 2015"}
+                    </code>
+
+            </div>
         </div>
+
+        <footer class="m-x-auto" style="width: 500px;">
+            <p>
+                © 2016 -- Daniel Lim | Profound Ideation Inc. | All Rights Reserved
+            </p>
+        </footer>
+
     </body>
 </html>
