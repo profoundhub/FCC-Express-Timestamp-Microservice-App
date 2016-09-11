@@ -10,7 +10,12 @@ app.set('port', (process.env.PORT || 8081));
 
 const moment = require('moment');
 
-app.use(express.static(__dirname + '/index.html'));
+// app.use(express.static(__dirname + '/index.html'));
+// app.use(express.static(__dirname));
+
+app.get('/', function (req, res) {
+  res.render('index', {});
+});
 
 app.get('/:date', (req,res) => {
 
