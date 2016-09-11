@@ -1,15 +1,34 @@
-var express = require('express');
-var app = express();
+"use strict";
+
+const express = require('express');
+const app = express();
+
+const http = require('http').Server(app);
+const path = require('path');
+
+const moment = require('moment');
+
+app.set('port', (process.env.PORT || 8081));
 
 app.get('/', function (req, res) {
-   res.send('Hello World');
+   res.send('Test App!');
 })
 
-var server = app.listen(8081, function () {
+if (queryDate !== "Invalid Data") {
+  var unixDate = moment.unix(queryDate);
+  var humanDate = moment(queryDate);
+
+  res.json ({
+      "unix": unixDate, "human": humanDate
+  })
+
+}
+
+http.listen(port, function () {
 
   var host = server.address().address
   var port = server.address().port
 
-  console.log("Example App Listening at http://%s:%s", host, port)
+  console.log("Example App Listening on *:" + port);
 
 })
