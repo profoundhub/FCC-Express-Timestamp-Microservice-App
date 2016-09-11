@@ -1,25 +1,25 @@
-Steps:
+### Steps:
 
 # Installing Express
 
-$ npm install express --save
+- $ npm install express --save
 
 ## Other Dependencies
 
-$ npm install body-parser --save
-$ npm install cookie-parser --save
-$ npm install multer --save
+- $ npm install body-parser --save
+- $ npm install cookie-parser --save
+- $ npm install multer --save
 
 ## Install Moment.js
 
-$ npm install moment --save
+- $ npm install moment --save
 
 ## Start Server:
 
-$ node server.js
+- $ node server.js
 
-Visit it: http://localhost:8081/ OR http://127.0.0.1:8081
+- Visit it: http://localhost:8081/ OR http://127.0.0.1:8081
 
 ## What is should look like:
 
-https://timestamp-ms.herokuapp.com/
+- https://timestamp-ms.herokuapp.com/
