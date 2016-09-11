@@ -3,33 +3,33 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app);
 const path = require('path');
+
 // app.set('port', (process.env.PORT || 8081));
-const port = process.env.PORT || 8081;
+// const port = process.env.PORT || 8081;
+
+app.set('port', (process.env.PORT || 8081));
+
 const moment = require('moment');
 
-app.get('/:date', function (req, res) {
-   // res.send('Test App!');
-   var queryDate = new Date(req.params.date);
-   console.log(queryDate);
+app.get('/:date', (req,res) => {
 
-if (queryDate !== "Invalid Date") {
-  var unixDate = moment.unix(queryDate);
-  var humanDate = moment(queryDate);
+  let time = moment(req.params.date, 'MMMM DD, YYYY', true);
 
-    res.json ({
-        "unix": unixDate, "human": humanDate
-    })
+  if (!time.isValid())
+    time = moment.unix(req.params.date);
+
+  if (!time.isValid()) {
+    res.json({
+      'unix': null, 'natural': null
+    });
   }
-  else {
-    res.send('Not Feeling Well ...');
-  }
-})
 
-http.listen(port, function () {
-/*
-  var host = server.address().address
-  var port = server.address().port
-*/
-  console.log("TimeStamp API App Listening on *:" + port);
+  res.json({
+    'unix': time.format('X'),
+    'natural': time.format('MMMM DD, YYYY')
+  });
+});
 
-})
+app.listen(app.get('port'), () => {
+  console.log(`Server listening on port ${app.get('port')}`);
+});
