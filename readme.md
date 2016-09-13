@@ -18,7 +18,7 @@
 
 - $ node server.js
 
-- Wisit it (on your Local Machine): http://localhost:8081/ OR http://127.0.0.1:8081
+- Wisit it (on your Local Machine): http://localhost:8081 OR http://127.0.0.1:8081
 
 ## Original Challenge:
 
