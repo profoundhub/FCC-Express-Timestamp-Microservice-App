@@ -36,3 +36,9 @@ https://www.freecodecamp.com/challenges/timestamp-microservice
 
 - <https://fcc-ts-ms.herokuapp.com/1450137600>
 - <https://fcc-ts-ms.herokuapp.com/December%2015,%202015>
+
+## Usage
+The endpoint can be found at: <https://fcc-ts-ms.herokuapp.com/> .
+
+## Source Code
+The source code can be located in my GitHub Repo: https://github.com/profoundhub/FCC-Express-Timestamp-Microservice-App/ .
